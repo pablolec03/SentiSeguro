@@ -1,0 +1,65 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.example.sentiseguro'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.sentiseguro"
+        minSdk 29
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding true // Habilita ViewBinding para acceso más fácil a las vistas
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.room.common
+    implementation libs.room.runtime
+
+    // Dependencias esenciales para SentiSeguro
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1' // Geolocalización (Geofencing API)
+    implementation 'androidx.recyclerview:recyclerview:1.3.1' // RecyclerView
+    implementation 'androidx.cardview:cardview:1.0.0' // CardView
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.2' // LiveData para actualizaciones dinámicas
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2' // ViewModel para mejor gestión de datos
+    implementation 'androidx.work:work-runtime:2.8.1' // WorkManager para tareas en segundo plano
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.preference:preference:1.1.1'
+
+    // Manejo de permisos en tiempo de ejecución
+    implementation 'com.karumi:dexter:6.2.3'
+
+    // Room Database (ORM para persistencia)
+    annotationProcessor 'androidx.room:room-compiler:2.6.1' // CORRECCIÓN: Usa `annotationProcessor`
+
+    // Testing
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}

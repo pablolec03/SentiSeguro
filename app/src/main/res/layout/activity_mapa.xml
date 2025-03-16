@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sentiseguro.ui.MapaActivity">
+
+    <!-- Contenedor del mapa (sin incluir directamente SupportMapFragment) -->
+    <FrameLayout
+        android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- Botón flotante para centrar el mapa en la ubicación actual, situado a la izquierda -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_mi_ubicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_mi_ubicacion"
+        android:contentDescription="@string/center_map"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="6dp"
+        app:layout_anchor="@id/map_container"
+        app:layout_anchorGravity="bottom|start"/>
+
+    <!-- Botón para agregar ubicación manualmente -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_agregar_ubicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/add_location"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white"
+        app:cornerRadius="12dp"
+        android:layout_gravity="top|end"
+        android:contentDescription="@string/add_location_description"/>
+        
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

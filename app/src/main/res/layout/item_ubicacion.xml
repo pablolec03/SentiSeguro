@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="3dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Sección de información de la ubicación -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:paddingBottom="4dp"
+                android:text="@string/location_item_default_name" />
+
+            <TextView
+                android:id="@+id/tv_direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                android:paddingBottom="4dp"
+                android:text="@string/location_item_default_address" />
+
+            <TextView
+                android:id="@+id/tv_rango"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/location_item_default_range" />
+        </LinearLayout>
+
+        <!-- Sección de botones de acción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:paddingTop="8dp">
+
+            <ImageButton
+                android:id="@+id/btn_editar"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_editar"
+                android:contentDescription="@string/edit"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp"
+                android:focusable="true"
+                android:clickable="true"/>
+
+            <ImageButton
+                android:id="@+id/btn_borrar"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_borrar"
+                android:contentDescription="@string/delete"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp"
+                android:focusable="true"
+                android:clickable="true"/>
+
+            <ImageButton
+                android:id="@+id/btn_llamar"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_llamar"
+                android:contentDescription="@string/call_contact"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="8dp"
+                android:focusable="true"
+                android:clickable="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nombre de la aplicación -->
+    <string name="app_name">SentiSeguro</string>
+
+    <!-- Cadenas para formularios -->
+    <string name="location_name_hint">Nombre de la ubicación</string>
+    <string name="address_hint">Dirección</string>
+    <string name="security_range_hint">Rango de seguridad (metros)</string>
+    <string name="contact_number_hint">Número de contacto (opcional)</string>
+    <string name="select_contact">Seleccionar Contacto</string>
+    <string name="get_current_location">Obtener ubicación actual</string>
+    <string name="save_location">Guardar Ubicación</string>
+    <string name="save_changes">Guardar Cambios</string>
+
+    <!-- Textos para el menú -->
+    <string name="search_location">Buscar ubicación</string>
+    <string name="add_location">Añadir ubicación</string>
+    <string name="view_map">Ver Mapa</string>
+    <string name="dark_mode">Modo Oscuro</string>
+    <string name="exit">Salir</string>
+    <string name="change_language">Cambiar Idioma</string>
+
+    <!-- Confirmación de salida -->
+    <string name="exit_confirmation_title">Confirmar salida</string>
+    <string name="exit_confirmation_message">¿Estás seguro de que deseas salir?</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+
+    <!-- Validaciones y notificaciones -->
+    <string name="complete_all_fields">Por favor, completa todos los campos</string>
+    <string name="range_must_be_number">El rango debe ser un número</string>
+    <string name="location_saved">Ubicación guardada</string>
+    <string name="location_updated">Ubicación actualizada</string>
+    <string name="location_not_found">No se pudo obtener la ubicación</string>
+    <string name="location_permission_denied">Permiso de ubicación denegado</string>
+    <string name="no_contact_available">No hay un contacto vinculado</string>
+
+    <!-- Notificaciones y mensajes de geofencing -->
+    <string name="notification_alert_title">Alerta de Ubicación</string>
+    <string name="entered_safe_zone">Has ENTRADO en la zona segura: %1$s</string>
+    <string name="exited_safe_zone">Has SALIDO de la zona segura: %1$s</string>
+    <string name="unknown_transition">Transición desconocida en geofence: %1$d</string>
+
+    <!-- Notificación del servicio -->
+    <string name="service_notification_title">SentiSeguro en ejecución</string>
+    <string name="service_notification_text">Monitoreando ubicaciones seguras...</string>
+
+    <!-- Canal de notificación -->
+    <string name="notification_channel_name">Alertas de Ubicación</string>
+    <string name="notification_channel_description">Notificaciones cuando entras o sales de una ubicación segura.</string>
+    <string name="notification_channel_created">Canal de notificación creado: %1$s</string>
+
+    <!-- Geofences -->
+    <string name="geofence_added">Geofence añadida: %1$s</string>
+    <string name="geofence_add_error">Error al añadir Geofence: %1$s</string>
+    <string name="multiple_geofences_added">Todas las Geofences han sido añadidas</string>
+    <string name="multiple_geofences_add_error">Error al añadir múltiples Geofences: %1$s</string>
+    <string name="geofence_removed">Geofence eliminada: %1$s</string>
+    <string name="geofence_remove_error">Error al eliminar Geofence: %1$s</string>
+    <string name="all_geofences_removed">Todas las Geofences han sido eliminadas</string>
+    <string name="all_geofences_remove_error">Error al eliminar todas las Geofences: %1$s</string>
+    <string name="unknown_geofence_error">Error desconocido en Geofencing</string>
+
+    <!-- Boot y restauración de geocercas -->
+    <string name="boot_restarted">Dispositivo reiniciado: restaurando geocercas...</string>
+    <string name="no_locations_found">No hay ubicaciones guardadas. No se restauran geocercas.</string>
+    <string name="geofences_restored_successfully">Geocercas restauradas correctamente.</string>
+    <string name="geofences_restored_error">Error al restaurar geocercas: %1$s</string>
+
+    <!-- Formato para coordenadas -->
+    <string name="location_coordinates_format">Lat: %.4f, Lng: %.4f</string>
+
+    <!-- Textos para Activity Mapa -->
+    <string name="center_map">Centrar mapa en mi ubicación</string>
+    <string name="add_location_description">Agregar nueva ubicación manualmente</string>
+
+    <!-- Valores por defecto para ítems de ubicación -->
+    <string name="location_item_default_name">Nombre de la ubicación</string>
+    <string name="location_item_default_address">Dirección de la ubicación</string>
+    <string name="location_item_default_range">Rango de seguridad: 100m</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Borrar</string>
+    <string name="call_contact">Llamar contacto</string>
+
+    <!-- Notificación -->
+    <string name="notification_showing">Mostrando notificación...</string>
+    <string name="notification_sent">Notificación enviada. ID: %1$d</string>
+    <string name="notification_manager_null">Error: NotificationManager es NULL.</string>
+
+    <!-- Canal del servicio -->
+    <string name="service_channel_name">Servicio de Ubicación</string>
+    <string name="service_channel_description">Notificaciones en segundo plano para monitorear ubicaciones seguras.</string>
+
+    <!-- Logs del servicio -->
+    <string name="service_started">Servicio iniciado</string>
+    <string name="service_running">Servicio ejecutándose en primer plano...</string>
+    <string name="service_stopped">Servicio finalizado</string>
+    <string name="geofences_updating">Actualizando Geofences...</string>
+
+    <!-- Otros -->
+    <string name="adding_new_location">Añadiendo nueva ubicación...</string>
+    <string name="location_address">Dirección: %1$s</string>
+    <string name="location_range">Rango: %1$d metros</string>
+
+    <!-- Navegación -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_map">Mapa</string>
+    <string name="nav_add_location">Añadir ubicación</string>
+    <string name="nav_change_language">Cambiar idioma</string>
+    <string name="nav_dark_mode">Cambiar modo noche</string>
+    <string name="nav_settings">Configuración</string>
+    <string name="nav_exit">Salir</string>
+    <string name="nav_subtitle">Subtítulo del usuario</string>
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
+
+    <!-- Configuración -->
+    <string name="settings_label">Configuración</string>
+    <string name="nav_config">Configuración</string>
+
+    <!-- Confirmación de eliminación -->
+    <string name="confirm_delete_title">Eliminar ubicación</string>
+    <string name="confirm_delete_message">¿Estás seguro de que deseas eliminar esta ubicación?</string>
+    <string name="location_deleted">Ubicación eliminada</string>
+
+    <!-- Recursos adicionales -->
+    <string name="log_notification_tag">Notificacion</string>
+    <string name="persistent_notification_showing">Mostrando notificación persistente</string>
+    <string name="persistent_notification_shown">Notificación persistente mostrada, ID: %1$d</string>
+    <string name="persistent_notification_cancelled">Notificación persistente cancelada</string>
+    <string name="safe_zone_created_title">Zona segura creada</string>
+    <string name="safe_zone_created_message">La nueva ubicación %1$s es ahora una zona segura</string>
+
+    <string name="export_locations_title">Exportar Ubicaciones</string>
+    <string name="export_locations_message">Estas seguro de que quieres exportar las ubicaciones?</string>
+    <string name="export_locations_positive">Aceptar</string>
+    <string name="export_locations_negative">Cancelar</string>
+    <string name="export_field_nombre">Nombre</string>
+    <string name="export_field_direccion">Direccion</string>
+    <string name="export_field_latitud">Latitud</string>
+    <string name="export_field_longitud">Longitud</string>
+    <string name="export_field_rango">Rango</string>
+    <string name="export_unit_m">m</string>
+    <string name="export_field_contacto">Contacto</string>
+    <string name="export_locations_success">Archivo exportado correctamente</string>
+    <string name="export_locations_error">Error exportando ubicaciones</string>
+    <string name="share_locations">Compartir ubicacion</string>
+    <string name="export_locations_menu">Exportar Ubicacion</string>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Opciones de la Toolbar">
+        <CheckBoxPreference
+            android:key="toolbar_agregar"
+            android:title="Mostrar 'Agregar Ubicación'"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:key="toolbar_mapa"
+            android:title="Mostrar 'Mapa'"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:key="toolbar_tema"
+            android:title="Mostrar 'Modo Oscuro'"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:key="toolbar_language"
+            android:title="Mostrar 'Cambiar Idioma'"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>
